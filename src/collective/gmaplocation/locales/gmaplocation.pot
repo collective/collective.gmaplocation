@@ -1,0 +1,209 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-06-04 10:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: gmaplocation\n"
+
+#: collective.gmaplocation/src/collective/gmaplocation/browser/templates/route.pt:4
+msgid "Calculate Route to this location"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/browser/views.py:16
+msgid "Cannot parse lat/lng. Float conversion failed"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/browser/views.py:37
+msgid "Cannot parse zoom. Int conversion failed"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/utils.py:15
+msgid "English"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/utils.py:16
+msgid "English (Australian)"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/utils.py:17
+msgid "English (Great Britain)"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/utils.py:24
+msgid "European Union"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/utils.py:14
+msgid "German"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/utils.py:23
+msgid "Germany"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/browser/templates/route.pt:27
+msgid "Go"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/utils.py:35
+msgid "Hybrid"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/browser/views.py:23
+msgid "Location Coordinates set: ${lat}, ${lon}"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/browser/templates/route.pt:9
+msgid "Origin"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/browser/templates/authoring.pt:12
+msgid "Pick location from Map"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/browser/templates/route.pt:34
+msgid "Result"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/utils.py:33
+msgid "Roadmap"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/utils.py:34
+msgid "Satellite"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/browser/templates/authoring.pt:19
+msgid "Set current Map Zoom Level as Location Zoom Level"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/utils.py:25
+msgid "Soviet Union"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/utils.py:36
+msgid "Terrain"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/utils.py:26
+msgid "United Kingdom"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/utils.py:27
+msgid "United States"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/browser/views.py:49
+msgid "Zoom level set to: ${zoom}"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/browser/views.py:43
+msgid "Zoom out of range"
+msgstr ""
+
+#: collective.gmaplocation/src/collective/gmaplocation/browser/templates/authoring.pt:33
+msgid "center map"
+msgstr ""
+
+#. Default: "Map height"
+#: collective.gmaplocation/src/collective/gmaplocation/extender.py:106
+msgid "label_height"
+msgstr ""
+
+#. Default: "Info window description"
+#: collective.gmaplocation/src/collective/gmaplocation/extender.py:157
+msgid "label_info_description"
+msgstr ""
+
+#. Default: "Info window image"
+#: collective.gmaplocation/src/collective/gmaplocation/extender.py:164
+msgid "label_info_image"
+msgstr ""
+
+#. Default: "Info window target link"
+#: collective.gmaplocation/src/collective/gmaplocation/extender.py:171
+msgid "label_info_target_link"
+msgstr ""
+
+#. Default: "Info window title"
+#: collective.gmaplocation/src/collective/gmaplocation/extender.py:149
+msgid "label_info_title"
+msgstr ""
+
+#. Default: "Map language"
+#: collective.gmaplocation/src/collective/gmaplocation/extender.py:124
+msgid "label_language"
+msgstr ""
+
+#. Default: "Latitude"
+#: collective.gmaplocation/src/collective/gmaplocation/extender.py:78
+msgid "label_latitude"
+msgstr ""
+
+#. Default: "Longitude"
+#: collective.gmaplocation/src/collective/gmaplocation/extender.py:86
+msgid "label_longitude"
+msgstr ""
+
+#. Default: "Map display type"
+#: collective.gmaplocation/src/collective/gmaplocation/extender.py:142
+msgid "label_map_type"
+msgstr ""
+
+#. Default: "Map region"
+#: collective.gmaplocation/src/collective/gmaplocation/extender.py:133
+msgid "label_region"
+msgstr ""
+
+#. Default: "Map width"
+#: collective.gmaplocation/src/collective/gmaplocation/extender.py:96
+msgid "label_width"
+msgstr ""
+
+#. Default: "Map zoom level"
+#: collective.gmaplocation/src/collective/gmaplocation/extender.py:115
+msgid "label_zoom"
+msgstr ""
+
+#############################
+# Custom, not handled by i18n
+#############################
+
+msgid "Default Width"
+msgstr ""
+
+msgid "Default Height"
+msgstr ""
+
+msgid "Default Latitude"
+msgstr ""
+
+msgid "Default Longitude"
+msgstr ""
+
+msgid "Default Zoom"
+msgstr ""
+
+msgid "Default Language"
+msgstr ""
+
+msgid "Default Region"
+msgstr ""
+
+msgid "Default Map Type"
+msgstr ""
+
+msgid "Save"
+msgstr ""

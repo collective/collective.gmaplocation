@@ -1,0 +1,6 @@
+<script src=""
+        type="text/javascript"
+        tal:attributes="src view/gmap_script_source"></script>
+<script src=""
+        type="text/javascript"
+        tal:attributes="src view/gmap_script_lang"></script>

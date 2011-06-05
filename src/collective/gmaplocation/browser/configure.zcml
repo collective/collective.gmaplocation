@@ -1,0 +1,92 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser">
+
+  <!-- styles -->
+  <browser:resource
+    name="collective.gmaplocation.css"
+    file="styles/main.css"
+    layer="collective.gmaplocation.interfaces.IGMapLocationExtensionLayer"
+  />
+  
+  <!-- javascripts -->
+  <browser:resourceDirectory
+    name="collective.gmaplocation.scripts"
+    directory="scripts"
+    layer="collective.gmaplocation.interfaces.IGMapLocationExtensionLayer"
+  />
+  
+  <!-- images -->
+  <browser:resourceDirectory
+    name="collective.gmaplocation.images"
+    directory="images"
+    layer="collective.gmaplocation.interfaces.IGMapLocationExtensionLayer"
+  />
+  
+  <!-- content providers -->
+  <adapter
+    name="collective.gmaplocation.resources"
+    provides="zope.contentprovider.interfaces.IContentProvider"
+    factory=".provider.ScriptResources"
+  />
+  
+  <adapter
+    name="collective.gmaplocation.authoring"
+    provides="zope.contentprovider.interfaces.IContentProvider"
+    factory=".provider.Authoring"
+  />
+  
+  <adapter
+    name="collective.gmaplocation.map"
+    provides="zope.contentprovider.interfaces.IContentProvider"
+    factory=".provider.Map"
+  />
+  
+  <adapter
+    name="collective.gmaplocation.invocation"
+    provides="zope.contentprovider.interfaces.IContentProvider"
+    factory=".provider.Invocation"
+  />
+  
+  <adapter
+    name="collective.gmaplocation.route"
+    provides="zope.contentprovider.interfaces.IContentProvider"
+    factory=".provider.Route"
+  />
+  
+  <adapter
+    name="collective.gmaplocation.info"
+    provides="zope.contentprovider.interfaces.IContentProvider"
+    factory=".provider.Info"
+  />
+  
+  <!-- set location ajax action -->
+  <browser:page
+    for="collective.gmaplocation.interfaces.IGMapLocation"
+    name="set_location"
+    class=".views.GMapLocationView"
+    attribute="set_location"
+    permission="cmf.ModifyPortalContent"
+    layer="collective.gmaplocation.interfaces.IGMapLocationExtensionLayer"
+  />
+  
+  <!-- set zoom level ajax action -->
+  <browser:page
+    for="collective.gmaplocation.interfaces.IGMapLocation"
+    name="set_zoom"
+    class=".views.GMapLocationView"
+    attribute="set_zoom"
+    permission="cmf.ModifyPortalContent"
+    layer="collective.gmaplocation.interfaces.IGMapLocationExtensionLayer"
+  />
+  
+  <!-- control panel -->
+  <browser:page
+    name="gmap-controlpanel"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    class=".controlpanel.GMapControlPanel"
+    template="templates/controlpanel.pt"
+    permission="cmf.ManagePortal"
+    layer="collective.gmaplocation.interfaces.IGMapLocationExtensionLayer"
+  />
+
+</configure>

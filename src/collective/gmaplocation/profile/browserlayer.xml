@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+    name="collective.gmaplocation"
+    interface="collective.gmaplocation.interfaces.IGMapLocationExtensionLayer"/>
+</layers>

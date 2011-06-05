@@ -1,0 +1,42 @@
+<tal:authoring condition="view/display_authoring"
+               i18n:domain="gmaplocation">
+
+  <span id="gmaplocation_context"
+        style="display:none"
+        tal:content="view/context_url">URL</span>
+  
+  <div id="gmaplocation_authoring"
+       xmlns:ajax="http://namesspaces.bluedynamics.eu/ajax">
+      
+    <div>
+      <a href=""
+         title="Pick location from Map"
+         id="pick_location_action"
+         i18n:attributes="title">&nbsp;</a>
+    </div>
+      
+    <div>
+      <a href=""
+         title="Set current Map Zoom Level as Location Zoom Level"
+         id="set_zoom_action"
+         i18n:attributes="title">&nbsp;</a>
+    </div>
+      
+    <div>
+      <form id="search_location_action">
+          
+        <input type="text"
+               name="gmaplocation_new_location"
+               class="gmaplocation_search"
+               value="" />
+          
+        <input type="submit"
+               value="center map"
+               class="allowMultiSubmit"
+               i18n:attributes="value" />
+          
+      </form>
+    </div>
+  </div>
+  <div class="visualClear"></div>
+</tal:authoring>

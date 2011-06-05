@@ -1,0 +1,28 @@
+<div class="locationinfowindow"
+     tal:define="title view/data/info_title;
+                 description view/info_description;
+                 image view/data/info_image;
+                 link view/data/info_target_link;">
+  <h5 tal:content="title">Title</h5>
+  <p>
+    <tal:image condition="image">
+      <tal:linked condition="link">
+        <a href=""
+           tal:attributes="href link">
+          <img src="" alt=""
+               tal:replace="structure image/tag" />
+        </a>
+      </tal:linked>
+      <tal:notlinked condition="not:link">
+        <img src="" alt=""
+             tal:replace="structure image/tag" />
+      </tal:notlinked>
+    </tal:image>
+    <span tal:replace="structure description">description</span>
+  </p>
+  <tal:linked condition="link">
+    <a href=""
+       tal:attributes="href link"
+       tal:content="link">link</a>
+  </tal:linked>
+</div>

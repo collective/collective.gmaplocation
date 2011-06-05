@@ -1,0 +1,42 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:five="http://namespaces.zope.org/five"
+           xmlns:i18n="http://namespaces.zope.org/i18n">
+
+  <five:registerPackage package="." initialize=".initialize" />
+  
+  <!-- Make ATDocument be a location -->
+  <class class="Products.ATContentTypes.content.document.ATDocument">
+    <implements interface=".interfaces.IGMapLocation" />
+  </class>
+  
+  <i18n:registerTranslations directory="locales"/>
+  
+  <include package="archetypes.schemaextender" />
+  <include package="collective.js.jqueryui" />
+  <include package="bda.plone.ajax" />
+  
+  <include file="profile.zcml" />
+  <include file="skins.zcml" />
+  
+  <include package=".browser" />
+  
+  <!-- Archetypes schema extender for location data -->
+  <adapter
+    name="collective.gmaplocation"
+    factory=".extender.GMapLocationExtender"
+    provides="archetypes.schemaextender.interfaces.IOrderableSchemaExtender"
+  />
+  
+  <!-- 
+    Location data factory for archetypes schema extender based location data
+  -->
+  <adapter factory=".location.at_gmap_location_data" />
+  
+  <!-- Location data for GMapLocation FTI type -->
+  <adapter
+    name="GMapLocation"
+    for="Products.ATContentTypes.content.document.ATDocument"
+    factory=".location.ATGMapLocationData"
+  />
+
+</configure>

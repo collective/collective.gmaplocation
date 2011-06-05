@@ -1,0 +1,18 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/prefs_main_template/macros/master"
+      i18n:domain="plone">
+<body>
+
+  <metal:main metal:fill-slot="prefs_configlet_main">
+    <style type="text/css"
+           tal:content="string:#form-gmap_control_panel_form label {display:block;}">
+    </style>
+    <tal:form replace="structure view/form" />
+  </metal:main>
+
+</body>
+</html>

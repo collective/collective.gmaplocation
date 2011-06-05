@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<object name="portal_properties" meta_type="Plone Properties Tool">
+ 
+ <object name="gmap_location_properties" meta_type="Plone Property Sheet">
+  <property name="default_width" type="int">640</property>
+  <property name="default_height" type="int">480</property>
+  <property name="default_lat" type="float">47.2676888603</property>
+  <property name="default_lon" type="float">11.3904726505</property>
+  <property name="default_zoom" type="string">15</property>
+  <property name="default_language" type="string">de</property>
+  <property name="default_region" type="string">de</property>
+  <property name="default_map_type" type="string">HYBRID</property>
+ </object>
+ 
+</object>

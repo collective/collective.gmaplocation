@@ -1,0 +1,57 @@
+factory: form
+name: gmap_control_panel_form
+props:
+    action: context.form_action
+widgets:
+- default_width:
+    factory: field:label:text
+    value: expr:context.props.default_width
+    props:
+        label: i18n:Default Width
+- default_height:
+    factory: field:label:text
+    value: expr:context.props.default_height
+    props:
+        label: i18n:Default Height
+- default_lat:
+    factory: field:label:text
+    value: expr:context.props.default_lat
+    props:
+        label: i18n:Default Latitude
+- default_lon:
+    factory: field:label:text
+    value: expr:context.props.default_lon
+    props:
+        label: i18n:Default Longitude
+- default_zoom:
+    factory: field:label:select
+    value: expr:context.props.default_zoom
+    props:
+        label: i18n:Default Zoom
+        vocabulary: collective.gmaplocation.utils.zoom_vocab
+- default_language:
+    factory: field:label:select
+    value: expr:context.props.default_language
+    props:
+        label: i18n:Default Language
+        vocabulary: collective.gmaplocation.utils.language_vocab
+- default_region:
+    factory: field:label:select
+    value: expr:context.props.default_region
+    props:
+        label: i18n:Default Region
+        vocabulary: collective.gmaplocation.utils.region_vocab
+- default_map_type:
+    factory: field:label:select
+    value: expr:context.props.default_map_type
+    props:
+        label: i18n:Default Map Type
+        vocabulary: collective.gmaplocation.utils.map_type_vocab
+- save:
+    factory: submit
+    props:
+        action: save
+        expression: True
+        handler: context.save
+        next: context.next
+        label: i18n:Save

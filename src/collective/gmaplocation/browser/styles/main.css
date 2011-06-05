@@ -1,0 +1,62 @@
+/* info window */
+.locationinfowindow p {
+    margin:0 !important;
+}
+.locationinfowindow p img {
+    float:left;
+    margin-right:0.5em;
+}
+
+/* Location search input field */
+.gmaplocation_search {
+    width:300px;
+}
+
+/* Authoring styles */
+#gmaplocation_authoring div {
+    float:left;
+    height:42px;
+}
+#pick_location_action {
+    background: url('++resource++collective.gmaplocation.images/location_icon.png') top left no-repeat;
+}
+#set_zoom_action {
+    background: url('++resource++collective.gmaplocation.images/zoom_icon.png') top left no-repeat;
+}
+#gmaplocation_authoring div a {
+    display:block;
+    width:32px;
+    height:32px;
+    margin:5px;
+    cursor:pointer;
+    font-size:1px;
+    border:none !important;
+    border:#fff 3px solid;
+}
+#gmaplocation_authoring div a.selected {
+    background-color:#eee;
+    border:#eee 3px solid;
+    -moz-box-shadow:0 0 5px 5px #aaa;
+    -webkit-box-shadow: 0 0 5px #aaa;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+#search_location_action {
+    margin-top:8px;
+    margin-left:1em;
+}
+
+/* Route planner */
+div.gmaplocation_route {
+    border:#ccc 1px solid;
+    padding:1em;
+    margin-top:1em;
+}
+div.gmaplocation_route h3 {
+    border-bottom:#ccc 1px solid;
+    margin-bottom:0.3em;
+}
+#route_result_heading {
+    display:none;
+    margin-top:1em;
+}

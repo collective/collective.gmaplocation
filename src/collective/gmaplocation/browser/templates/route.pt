@@ -1,0 +1,40 @@
+<div class="gmaplocation_route"
+     i18n:domain="gmaplocation">
+      
+  <h3 i18n:translate="">Calculate Route to this location</h3>
+        
+  <form id="route_calculation"
+        action="#">
+  
+    <label for="gmaplocation_origin"
+           i18n:translate="">Origin</label>
+        
+    <input type="text"
+           name="gmaplocation_origin"
+           class="gmaplocation_search"
+           value="" />
+        
+    <input type="hidden"
+           name="gmaplocation_target_lat"
+           value=""
+           tal:attributes="value view/data/lat" />
+        
+    <input type="hidden"
+           name="gmaplocation_target_lon"
+           value=""
+           tal:attributes="value view/data/lon" />
+        
+    <input type="submit"
+           value="Go"
+           class="allowMultiSubmit"
+           i18n:attributes="value" />
+      
+  </form>
+      
+  <h3 id="route_result_heading"
+      i18n:translate="">Result</h3>
+        
+  <div id="route_result">
+  </div>
+      
+</div>
