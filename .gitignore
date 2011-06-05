@@ -1,0 +1,4 @@
+*.pyc
+*.pyo
+src/collective.gmaplocation.egg-info/
+dist/
