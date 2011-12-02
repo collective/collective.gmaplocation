@@ -38,6 +38,9 @@ History
 0.2
 ---
 
+- use content-core macro for location_view.
+  [jensens, 2011-12-03]
+
 - feature: unit of map height and width is now available in properties and 
   edit form.
   [jensens, 2011-12-03]
