@@ -55,8 +55,11 @@ class ScriptResources(Base):
     
     @property
     def gmap_script_lang(self):
-        return '/++resource++collective.gmaplocation.scripts/%s.js' \
-            % self.data.map_language
+        portal_state = getMultiAdapter((self.context, self.request),
+                                        name=u'plone_portal_state')
+        portal = portal_state.portal()           
+        return '%s/++resource++collective.gmaplocation.scripts/%s.js' \
+            % (portal.absolute_url(), self.data.map_language)
 
 
 class Authoring(Base):
