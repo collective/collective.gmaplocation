@@ -26,11 +26,15 @@ setup(name='collective.gmaplocation',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'yafowil',
+          'Plone',
           'yafowil.yaml>0.9',
           'yafowil.zope2',
           'archetypes.schemaextender',
           'collective.js.jqueryui',
           'bda.plone.ajax',
       ],
+      entry_points="""
+      [z3c.autoinclude.plugin]
+      target = plone
+      """,      
       )

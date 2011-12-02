@@ -1,4 +1,14 @@
 *.pyc
 *.pyo
-src/collective.gmaplocation.egg-info/
 dist/
+bin/
+var/
+eggs/
+develop-eggs/
+parts/
+src/*.egg-info
+*.pyc
+.project
+.installed.cfg
+.pydevproject
+.tmp*
