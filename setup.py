@@ -30,7 +30,6 @@ setup(name='collective.gmaplocation',
           'yafowil.yaml>0.9',
           'yafowil.zope2',
           'archetypes.schemaextender',
-          'collective.js.jqueryui',
           'bda.plone.ajax',
       ],
       entry_points="""
