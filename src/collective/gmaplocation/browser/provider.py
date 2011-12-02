@@ -83,7 +83,9 @@ class Map(Base):
     
     @property
     def dimensions(self):
-        return 'width:%ipx;height:%ipx' % (self.data.width, self.data.height)
+        return 'width: %i%s; height:%i%s' % \
+            (self.data.width, self.data.width_unit,
+             self.data.height, self.data.height_unit)
 
 
 class Invocation(Base):

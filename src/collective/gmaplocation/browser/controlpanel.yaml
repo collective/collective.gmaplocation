@@ -8,11 +8,21 @@ widgets:
     value: expr:context.props.default_width
     props:
         label: i18n:Default Width
+- default_width_unit:
+    factory: field:label:text
+    value: expr:context.props.default_width_unit
+    props:
+        label: i18n:Default Unit for Width
 - default_height:
     factory: field:label:text
     value: expr:context.props.default_height
     props:
         label: i18n:Default Height
+- default_height_unit:
+    factory: field:label:text
+    value: expr:context.props.default_height_unit
+    props:
+        label: i18n:Default Unit for Height
 - default_lat:
     factory: field:label:text
     value: expr:context.props.default_lat

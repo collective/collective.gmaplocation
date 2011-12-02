@@ -1,2 +1,2 @@
 <div id="map_canvas"
-     tal:attributes="style view/dimensions"></div>
+     tal:attributes="style python:view.dimensions"></div>

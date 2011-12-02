@@ -11,7 +11,7 @@
     <style type="text/css"
            tal:content="string:#form-gmap_control_panel_form label {display:block;}">
     </style>
-    <tal:form replace="structure view/form" />
+    <tal:form replace="structure python:view.form" />
   </metal:main>
 
 </body>

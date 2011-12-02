@@ -44,9 +44,10 @@ class at_extender_attributes(object):
         return ob
 
 
-@at_extender_attributes('width', 'height', 'lat', 'lon', 'zoom', 'map_type',
-                        'map_language', 'map_region', 'info_title',
-                        'info_description', 'info_image', 'info_target_link')
+@at_extender_attributes('width', 'width_unit', 'height', 'height_unit', 'lat', 
+                        'lon', 'zoom', 'map_type', 'map_language', 'map_region', 
+                        'info_title', 'info_description', 'info_image', 
+                        'info_target_link')
 class ATGMapLocationData(object):
     """IGMapLocationData implementation for schema extender location data.
     """

@@ -23,9 +23,10 @@ class propsheet_attributes(object):
         return ob
 
 
-@propsheet_attributes('default_width', 'default_height', 'default_lat', 
-                      'default_lon', 'default_zoom', 'default_language', 
-                      'default_region', 'default_map_type')
+@propsheet_attributes('default_width', 'default_width_unit', 'default_height', 
+                      'default_height_unit', 'default_lat', 'default_lon', 
+                      'default_zoom', 'default_language', 'default_region', 
+                      'default_map_type')
 class GMapProps(object):
     """Wrapper object for gmap_location_properties property sheet.
     """

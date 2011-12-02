@@ -99,6 +99,16 @@ class GMapLocationExtender(object):
                 label=_(u'label_width', u'Map width'),
             )
         ),
+        XStringField(
+            name='width_unit',
+            schemata='Location',
+            required=1,
+            default_method=lambda: get_props().default_width_unit,
+            widget=StringWidget(
+                size=3,
+                label=_(u'label_width_unit', u'Unit for width'),
+            )
+        ),
         XFloatField(
             name='height',
             schemata='Location',
@@ -107,6 +117,16 @@ class GMapLocationExtender(object):
             widget=IntegerWidget(
                 size=3,
                 label=_(u'label_height', u'Map height'),
+            )
+        ),
+        XStringField(
+            name='height_unit',
+            schemata='Location',
+            required=1,
+            default_method=lambda: get_props().default_height_unit,
+            widget=StringWidget(
+                size=3,
+                label=_(u'label_width_unit', u'Unit for height'),
             )
         ),
         XStringField(
