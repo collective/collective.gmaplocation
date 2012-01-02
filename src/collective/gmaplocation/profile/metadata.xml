@@ -3,5 +3,6 @@
   <version>0.1</version>
   <dependencies>
     <dependency>profile-bda.plone.ajax:default</dependency>
+    <dependency>profile-collective.js.jqueryui:default</dependency>
   </dependencies> 
 </metadata>

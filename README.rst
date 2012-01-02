@@ -35,6 +35,12 @@ Contributors
 History
 =======
 
+0.3
+---
+
+- re-add collective.js.jqueryui dependency. Need its autocomplete widget.
+  [rnix, 2012-01-02]
+
 0.2
 ---
 
