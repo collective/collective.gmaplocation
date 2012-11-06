@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = "0.3"
+version = "0.4"
 shortdesc ="Plone Add-On to manage and display locations."
 longdesc = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 
@@ -28,7 +28,7 @@ setup(name='collective.gmaplocation',
           'setuptools',
           'Plone',
           'yafowil.yaml>0.9',
-          'yafowil.zope2',
+          'yafowil.plone',
           'archetypes.schemaextender',
           'bda.plone.ajax',
           'collective.js.jqueryui',

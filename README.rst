@@ -35,6 +35,12 @@ Contributors
 History
 =======
 
+0.4
+---
+
+- Use yafowil.plone instead of yafowil.zope2.
+  [rnix, 2012-11-06]
+
 0.3
 ---
 
